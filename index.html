@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Multiple object detection using pre trained model in TensorFlow.js</title>
+  <meta charset="utf-8">
+  <!-- Import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="demos" class="invisible">
+
+    <h1>MA SUPER WEBCAM</h1>
+
+    <p> Lorem Elsass ipsum ornare Strasbourg Carola Morbi Verdammi météor pellentesque Chulia Roberstau salu dui leo
+      nullam wie hopla Wurschtsalad elementum amet flammekueche chambon placerat jetz gehts los merci vielmols habitant
+      sed purus id, wurscht knepfle réchime turpis,
+      schneck kartoffelsalad Spätzle Huguette bredele porta Miss Dahlias id lotto-owe baeckeoffe Mauris libero, ch'ai
+      Chulien Oberschaeffolsheim suspendisse varius dolor gravida tristique aliquam schpeck turpis adipiscing risus, sit
+      Kabinetpapier commodo Christkindelsmärik yeuh.
+      Lorem Elsass ipsum ornare Strasbourg Carola Morbi Verdammi météor pellentesque Chulia Roberstau salu dui leo
+      nullam wie hopla Wurschtsalad elementum amet flammekueche chambon placerat jetz gehts los merci vielmols habitant
+      sed purus id, wurscht knepfle réchime turpis,
+      schneck kartoffelsalad Spätzle Huguette bredele porta Miss Dahlias id lotto-owe baeckeoffe Mauris libero, ch'ai
+      Chulien Oberschaeffolsheim suspendisse varius dolor gravida tristique aliquam schpeck turpis adipiscing risus, sit
+      Kabinetpapier commodo Christkindelsmärik yeuh.</p>
+
+
+    <p>
+      Lorem Elsass ipsum ornare Strasbourg Carola Morbi Verdammi météor pellentesque Chulia Roberstau salu dui leo
+      nullam wie hopla Wurschtsalad elementum amet flammekueche chambon placerat jetz gehts los merci vielmols habitant
+      sed purus id, wurscht knepfle réchime turpis,
+      schneck kartoffelsalad Spätzle Huguette bredele porta Miss Dahlias id lotto-owe baeckeoffe Mauris libero, ch'ai
+      Chulien Oberschaeffolsheim suspendisse varius dolor gravida tristique aliquam schpeck turpis adipiscing risus, sit
+      Kabinetpapier commodo Christkindelsmärik yeuh.
+    </p>
+
+
+
+    <button id="webcamButton" onclick=Hide(); return:false; value="Off">Montrer sa sale tête</button>
+
+    <p>
+      Lorem Salu bissame ! Wie geht's les samis ? Hans apporte moi une Wurschtsalad avec un picon bitte, s'il te plaît.
+      Voss ? Une Carola et du Melfor ? Yo dû, espèce de Knäckes, ch'ai dit un picon !
+    </p>
+
+    <div id="liveView" class="camView">
+      <video id="webcam" autoplay muted width="640" height="480"></video>
+
+      <div class="detection_history_box">
+        <div id="date_container">
+          <span id="dateheure"></span>
+          <span id="history">test<br></span>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- Import TensorFlow.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+  <!-- Load the coco-ssd model to use to recognize things in images -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+  <!-- Import the page's JavaScript to do some stuff -->
+  <script src="script.js" defer></script>
+</body>
+
+</html>
